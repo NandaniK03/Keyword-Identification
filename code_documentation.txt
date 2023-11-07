@@ -1,0 +1,64 @@
+
+IDC 409: INTRODUCTION TO DATA SCIENCE
+
+PROJECT: KEYWORD IDENTIFICATION 
+
+Authors: Nandani Kundal MS21071
+         Mridul Karlupia MS21188
+			
+Date: 6 November 2023
+
+INTRODUCTION:
+
+This python code extracts keywords from data scraped from a webpage. It then analyzes and visualizes the extracted keywords.
+
+CODE DESCRIPTION:
+
+Libraries used :
+
+`requests` for making FTTP requests
+`beautifulsoup` for web scrapping
+`yake` for keyword extraction
+`wordcloud` for data visualization
+`matplotlib` for data visualization
+
+1. Web Scraping:
+- scrape the text from webpage using `beautifulsoup`
+
+2. Data Storage:
+- store the scraped text in a text file
+
+3. Data Preprocessing:
+- preprocess the data by lower casing each word
+
+4. Keyword Extraction:
+- extract most relevant keywords using `yake`
+- store the extracted keywords and correspoding scores as tuples in a list
+
+5. Data Visualization:
+
+a. Bar plot:
+- make a horizontal bar plot to accomodate keywords without overlapping of letters
+Scores on x axis and Keywords on y axis
+
+b. Word Cloud Generation:
+- generate a word cloud using the scores from `yake`
+- using wordcloud library
+
+Graphs and plots :
+
+1. Horizontal bar plot: Extracted Keywords vs Relevance Scores 
+2. Wordcloud : Relevant Keywords visuals
+
+RESOURCES: 
+
+- Link to the webpage used for web scraping:
+https://www.quantamagazine.org/brains-background-noise-may-hold-clues-to-persistent-mysteries-20210208/
+[This is a quantamagazine article about Aperiodic Brain Activity.]
+
+- Scraped text stored in text file: web_data.txt
+- Graphs: saved as images keyword_cloud.png and keyword_bargraph.png
+
+GITHUB LINKS :
+
+github repository link- https://github.com/NandaniK03/Keyword-Identification
